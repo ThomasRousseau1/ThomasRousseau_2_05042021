@@ -1,0 +1,15 @@
+/*GENERAL*/
+ul li 
+{
+    list-style-type: none;
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*BAS DE PAGE*/
+.infos
+{
+    display: flex;
+}
