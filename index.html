@@ -19,7 +19,7 @@
     <nav class="navbar">
         <ul class="main-nav">
             <li class="navitem"><a href="#mainsection">Hébergements</a></li>
-            <li class="navitem"><a href="#activités">Activités</a></li>
+            <li class="navitem"><a href="#activites">Activités</a></li>
         </ul>
         <div>
             <a id="inscription" href="#">S'inscrire</a>
@@ -45,22 +45,38 @@
 <!--Partie filtres-->
     <div class="filtres">
         <h3 id="titre-filtres">Filtres </h3>
-        <span class="blocs-icônes">
-            <span class="icons"><i class="fas fa-money-bill-wave"></i></span>
-            <a href="#">Économique</a>
-        </span>
-        <span class="blocs-icônes">
-            <span class="icons"><i class="fas fa-child"></i></span>
-            <a href="#">Familial</a>
-        </span>
-        <span class="blocs-icônes">
-            <span class="icons"><i class="fas fa-heart"></i></span>
-            <a href="#">Romantique</a>
-        </span>
+        <div class="grow">
+        <a href="#">
+            <span class="blocs-icônes">
+                <span class="icons"><i class="fas fa-money-bill-wave"></i></span>
+                <span class="filtres-description">Économique</span>
+            </span>
+        </a>
+    </div>
+    <div class="grow">
+        <a href="#">
+            <span class="blocs-icônes grow">
+                <span class="icons"><i class="fas fa-child"></i></span>
+                <span class="filtres-description">Familial</span>
+            </span>
+        </a>
+    </div>
+        <div class="grow">
+        <a href="#">
+            <span class="blocs-icônes grow">
+                <span class="icons"><i class="fas fa-heart"></i></span>
+                <span class="filtres-description">Romantique</span>
+            </span>
+        </a>
+    </div>
+        <div class="grow">
+        <a href="#">
         <span class="blocs-icônes">
             <span class="icons"><i class="fas fa-dog"></i></span>
-            <a href="#">Animaux autorisés</a>
+            <span class="filtres-description">Animaux autorisés</span>
         </span>
+        </a>
+    </div>
     </div>
 
         <div class="infos-logements">
@@ -237,42 +253,50 @@
 <!--Partie activités à Marseille-->
 <section id="activites">
     <h2>Activités à Marseille</h2>
-    <div id="container">
+        <div class="activites-container">
         <!--Vieux port-->
-        <div class="activites1">
-            <figure>
-                <a href="#"></a>
-                <figcaption>Vieux Port</figcaption>
-            </figure>
-        </div>
+            <a href="#">
+            <div class="activites-container-tall">
+                <img src="ressources/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                <h4 class="activites-container-titles" >Vieux Port</h4>
+            </div>
+            </a>
         <!--Pomègues et Ïles du Frioul-->
-        <div class="activites2">
-            <figure>
-                <a href="#"></a>
-                <figcaption>Fort de Pomègues</figcaption>
-            </figure>
-            <figure>
-                <a href="#"></a>
-                <figcaption>Îles du Frioul</figcaption>
-            </figure>
+        <div class="activites-container-small">
+            <div class="activites-container-small-pomegues">
+            <a href="#">
+                <img class="pomegues-img" src="ressources/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                <h4 class="activites-container-titles">Fort de Pomègues</h4>
+            </a>
+            </div>
+            <div class="activites-container-small-frioul">
+            <a href="#">
+                <img class="frioul-img" src="ressources/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+                <h4 class="activites-container-titles">Îles du Frioul</h4>
+                </a>
+            </div>
         </div>
         <!--Calanques-->
-        <div class="activites3">
-            <figure>
-                <a href="#"></a>
-                <figcaption>Parc National des Calanques</figcaption>
-            </figure>
-        </div>
+            <a href="#">
+            <div class="activites-container-tall">
+                <img src="ressources/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                <h4 class="activites-container-titles">Parc National des Calanques</h4>
+            </div>
+            </a>
         <!--Notre-Dame et Parc Longchamp-->
-        <div class="activites4">
-            <figure>
-                <a href="#"></a>
-                <figcaption>Notre-Dame-de-la-Garde</figcaption>
-            </figure>
-            <figure>
-                <a href="#"></a>
-                <figcaption>Parc Longchamp</figcaption>
-            </figure>
+        <div class="activites-container-small">
+            <div class="activites-container-small-notredame">
+                <a href="#">
+                <img class="notredame-img" src="ressources/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                <h4 class="activites-container-titles">Notre-Dame-de-la-Garde</h4>
+            </a>
+            </div>
+            <div class="activites-container-small-longchamp">
+                <a href="#">
+                <img class="longchamp-img" src="ressources/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Iles du Frioul">
+                <h4 class="activites-container-titles">Parc Longchamp</h4>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -282,7 +306,7 @@
 <footer>
     <section class="infos">
         <div class="apropos">
-            <h5>A propos</h5>
+            <h3>A propos</h3>
             <ul>
                 <li>Fonctionnement du site</li>
                 <li>Conditions générales du site</li>
@@ -290,14 +314,14 @@
             </ul>
         </div>
         <div class="noshebergements">
-            <h5>Nos hébergements</h5>
+            <h3>Nos hébergements</h3>
             <ul>
                 <li>Charte qualité</li>
                 <li>Soumettre votre hôtel</li>
             </ul>
         </div>
         <div class="assistance">
-            <h5>Assistance</h5>
+            <h3>Assistance</h3>
             <ul>
                 <li>Centre d'aide</li>
                 <li>Nous contacter</li>
