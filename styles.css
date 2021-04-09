@@ -144,6 +144,7 @@ form{
 .infos-logements{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 .icône-info{
     color: #0065FC;
@@ -158,11 +159,10 @@ form{
 #hebergements{
     justify-content: space-around;
     display: flex;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 15px;
-    margin-bottom: 30px;
     flex-wrap: wrap;
-    width: 80%;
 }
 .hebergements-infos{
     height: 80px;
@@ -196,7 +196,7 @@ form{
 }
 .logements img{
     object-fit: cover;
-    height: 160px;
+    height: 150px;
     width: 310px;
     margin-left: 5px;
     margin-top: 5px;
@@ -222,10 +222,10 @@ article{
     border-radius: 15px;
     width: 80%;
     margin-right: 50px;
-    margin-top: 30px;
 }
 .article-container-details{
     margin-left: 20px;
+    margin-top: 5px;
 }
 
 .populaires{
@@ -237,19 +237,19 @@ article{
 /* ASIDE */
 aside{
     background-color: #F2F2F2;
-    padding: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 10px;
-    width: 20%;
 }
 
 .aside-container{
-    width: 350px;
-    height: 150px;
+    width: 380px;
+    height: 160px;
     background: white;
     border-radius: 15px;
     -webkit-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.4); 
     box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.4);
-    margin: 55px 30px 40px 30px;
+    margin: 20px 20px 40px 20px;
 }
 
 .aside-container-details{
@@ -272,13 +272,11 @@ aside{
 .aside-container img{
     object-fit: cover;
     width: 125px;
-    height: 140px;
+    height: 150px;
     margin: 5px 0px -1px 5px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-
-
 
 /* Activités */
 
@@ -301,16 +299,16 @@ aside{
 }
 
 .apropos{
-    margin-right: 50px;
+    margin-right: 300px;
     margin-left: 30px;
 }
 
 .noshebergements{
-    margin-right: 50px;
+    margin-right: 300px;
     margin-left: 30px;
 }
 
 .assistance{
-    margin-right: 50px;
+    margin-right: 300px;
     margin-left: 30px;
 }
