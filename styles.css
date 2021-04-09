@@ -399,8 +399,8 @@ aside{
 .infos{
     display: flex;
     background-color: #F2F2F2;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .infos ul{
@@ -411,6 +411,9 @@ aside{
 }
 .infos h3{
     padding-left: 40px;
+}
+.infos a:hover{
+    font-weight: bold;
 }
 
 .apropos{
