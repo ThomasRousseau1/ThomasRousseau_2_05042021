@@ -1,7 +1,7 @@
 /*GENERAL*/
 a{
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 /*HEADER*/
@@ -32,6 +32,7 @@ header img{
 
 .main-nav{
     margin: 0;
+    padding: 0;
 }
 
 .navitem{
@@ -49,6 +50,7 @@ header img{
 #inscription{
     color: #0065FC;
     font-weight: bold;
+    padding-top: 80px;
 }
 
 
@@ -68,6 +70,7 @@ body{
 form{
     display: flex;
 }
+
 .fas{
     font-size: 1.3em;
 }
@@ -114,9 +117,13 @@ form{
 /* PARTIE FILTRES */
 #titre-filtres{
     float: left;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 .filtres{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -124,19 +131,13 @@ form{
 }
 
 .blocs-icônes{
-    margin-left: 50px;
+    display: inline-block;
+    margin-right: 30px;
     border: 2px solid #d9d9d9;
     border-radius: 30px;
     padding: 12.5px;
     font-size: 1em;
     font-weight: bold;
-}
-
-.blocs-icônes:hover{
-    background-color: #f5f9ff;
-}
-.grow:hover{
-    transform: scale(1.2);
 }
 
 .icons{
@@ -147,12 +148,17 @@ form{
     margin-left: -16px;
 }
 
-/* Ligne infos */
-.infos-logements{
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+.blocs-icônes:hover{
+    background-color: #f5f9ff;
 }
+
+.grow:hover{
+    transform: scale(1.2);
+}
+
+
+/* Ligne infos */
+
 .icône-info{
     color: #0065FC;
     padding: 8px 15px 8px 15px;
@@ -162,6 +168,12 @@ form{
     margin-right: 20px;
 }
 
+.infos-logements{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 /*HEBERGEMENTS*/
 #hebergements{
     justify-content: space-around;
@@ -169,6 +181,7 @@ form{
     border-radius: 15px;
     flex-wrap: wrap;
 }
+
 .hebergements-infos{
     height: 80px;
 }
@@ -222,6 +235,8 @@ form{
 #afficher-plus{
     margin-left: 50px;
     margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 article, aside{
@@ -235,6 +250,7 @@ article{
     width: 80%;
     margin-right: 50px;
 }
+
 .article-container-details{
     margin-left: 20px;
     margin-top: 5px;
@@ -448,7 +464,74 @@ aside{
 }
 
 
+
+
 /* PARTIE RESPONSIVE * / 
 
 /* Tablettes */
+@media screen and (max-width: 768px)
+{
+    /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
+    #blocpage
+    {
+        width: auto;
+    }
+    
+    header
+    {
+        flex-direction: column;
+    }
+
+    .main-nav
+    {
+        display: flex;
+        border-bottom: solid 2.5px #f2f2f2;
+        width: 100%;
+    }
+
+    /* Partie filtres */
+
+    /* Partie hébergements */
+    #mainsection
+    {
+        flex-direction: column-reverse;
+    }
+
+    aside 
+    {
+        margin-bottom: 50px;
+    }
+
+    /* Partie activités */
+    .activites-container
+    {
+        flex-direction: column;
+    }
+
+    /* Partie footer */
+    footer 
+    {
+        position: absolute;
+    }
+
+
+}
+
+
 /* iPhone8 */
+
+@media screen and (max-width: 375px)
+{
+    /* Partie filtres */
+    #titre-filtres
+    {
+        width: 100%;
+    }
+
+    /* Footer colonne */
+    .infos
+    {
+        flex-direction: column;
+    }
+}
+
