@@ -214,8 +214,14 @@ form{
     display: flex;
 }
 
-.titres-article{
-    margin-left: 75px;
+#titres-article{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#afficher-plus{
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 article, aside{
@@ -234,18 +240,25 @@ article{
     margin-top: 5px;
 }
 
-.populaires{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 /* ASIDE */
 aside{
     background-color: #F2F2F2;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
+}
+
+.populaires{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.aside-contenu{
+    justify-content: space-around;
 }
 
 .aside-container{
@@ -256,7 +269,7 @@ aside{
     box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     -webkit-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     -moz-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
-    margin: 20px 20px 40px 20px;
+    margin: 0px 20px 40px 20px;
 }
 
 .aside-container-details{
@@ -288,18 +301,19 @@ aside{
 /* ACTIVITES */
 #activites{
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 /* Grandes images */
 .activites-container{
     display: flex;
     justify-content: space-between;
-    height: 550px;
+    height: 630px;
 }
 
 .activites-container-tall{
-    height: 450px;
-    width: 320px;
+    height: 590px;
+    width: 400px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
@@ -307,8 +321,8 @@ aside{
 
 .activites-container-tall img{
     object-fit: cover;
-    width: 320px;
-    height: 400px;
+    height: 520px;
+    width: 400px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -322,7 +336,7 @@ aside{
 
 /*Fort de Pomègues */
 .activites-container-small-pomegues{
-    width: 300px;
+    width: 400px;
     height: 300px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
@@ -332,26 +346,26 @@ aside{
 
 .pomegues-img{
     object-fit: cover;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 230px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 /* Iles du Frioul */
 .activites-container-small-frioul{
-    width: 300px;
-    height: 170px;
+    width: 400px;
+    height: 220px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .frioul-img{
     object-fit: cover;
-    width: 300px;
-    height: 120px;
+    width: 400px;
+    height: 150px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -359,8 +373,8 @@ aside{
 
 /* Notre Dame de la Garde */
 .activites-container-small-notredame{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 260px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
@@ -368,8 +382,8 @@ aside{
 
 .notredame-img{
     object-fit: cover;
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 190px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -377,24 +391,24 @@ aside{
 
 /* Parc Longchamp */
 .activites-container-small-longchamp{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 260px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .longchamp-img{
     object-fit: cover;
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 190px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .activites-container-titles{
-    margin: 10px 0px 10px 10px;
+    margin: 20px 0px 10px 20px;
 }
 
 /*FOOTER*/
@@ -432,3 +446,9 @@ aside{
     margin-right: 300px;
     margin-left: 30px;
 }
+
+
+/* PARTIE RESPONSIVE * / 
+
+/* Tablettes */
+/* iPhone8 */
