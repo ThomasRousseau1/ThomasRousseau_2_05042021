@@ -26,8 +26,7 @@ header img{
 .navbar{
     display: flex;
     align-items: center;
-    margin-right: 50px;
-    
+    margin-right: 80px;    
 }
 
 .navbar-menu{
@@ -37,7 +36,7 @@ header img{
 
 .navbar-menu_item{
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 80px;
     list-style-type: none;
 }
 
@@ -54,6 +53,7 @@ header img{
     position: absolute;
     right: 0;
     top: 0;
+    margin-right: 60px;
 }
 
 
@@ -66,7 +66,6 @@ body{
     margin: 0;
     max-width: 100%;
     font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
 }
 
 /*RECHERCHE*/
@@ -84,7 +83,7 @@ body{
     border-bottom-left-radius: 15px;
     border-style: none;
     height: 50px;
-    width: 50px;
+    width: 60px;
 }
 
 .search-form_input{
@@ -95,6 +94,7 @@ body{
     padding-left: 20px;
     border-left: none;
     border-right: none;
+    width: 200px;
 }
 
 .search-form_button{
@@ -111,7 +111,7 @@ body{
     padding: 0;
 }
 
-.boutonrechercheiphone{
+.search-form_button_iphone{
     visibility: hidden;
 }
 
@@ -128,7 +128,6 @@ body{
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 80%;
 }
 
 .filters-bloc{
@@ -175,16 +174,11 @@ body{
     display: flex;
 }
 
-article, aside{
-    text-align: justify;
-}
-
-
 /* ARTICLE */
 article{
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 80%;
+    width: 75%;
     margin-right: 50px;
 }
 
@@ -262,6 +256,7 @@ aside{
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
+    width: 25%;
 }
 
 .aside-title{
@@ -274,18 +269,19 @@ aside{
 }
 
 .aside-container{
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
 
 .aside-container_bloc{
-    width: 380px;
+    width: 100%;
     height: 160px;
     background: white;
     border-radius: 15px;
     box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     -webkit-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     -moz-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
-    margin: 0px 20px 40px 20px;
+     margin: 0px 0px 20px 0px;
 }
 
 .aside-container img{
@@ -323,27 +319,27 @@ aside{
 #activites{
     margin-top: 60px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 /* Grandes images */
 .activites-container{
     display: flex;
-    justify-content: space-between;
     height: 630px;
 }
-
 .activites-container-tall{
     height: 590px;
-    width: 400px;
+    width: 360px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
+    margin-right: 50px;
 }
 
 .activites-container-tall img{
     object-fit: cover;
     height: 520px;
-    width: 400px;
+    width: 360px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -357,7 +353,7 @@ aside{
 
 /*Fort de Pomègues */
 .activites-container-small-pomegues{
-    width: 400px;
+    width: 360px;
     height: 300px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
@@ -367,7 +363,7 @@ aside{
 
 .pomegues-img{
     object-fit: cover;
-    width: 400px;
+    width: 360px;
     height: 230px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -375,7 +371,7 @@ aside{
 
 /* Iles du Frioul */
 .activites-container-small-frioul{
-    width: 400px;
+    width: 360px;
     height: 220px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
@@ -385,7 +381,7 @@ aside{
 
 .frioul-img{
     object-fit: cover;
-    width: 400px;
+    width: 360px;
     height: 150px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -394,7 +390,7 @@ aside{
 
 /* Notre Dame de la Garde */
 .activites-container-small-notredame{
-    width: 400px;
+    width: 360px;
     height: 260px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
@@ -403,7 +399,7 @@ aside{
 
 .notredame-img{
     object-fit: cover;
-    width: 400px;
+    width: 360px;
     height: 190px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -412,7 +408,7 @@ aside{
 
 /* Parc Longchamp */
 .activites-container-small-longchamp{
-    width: 400px;
+    width: 360px;
     height: 260px;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
@@ -422,7 +418,7 @@ aside{
 
 .longchamp-img{
     object-fit: cover;
-    width: 400px;
+    width: 360px;
     height: 190px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -435,6 +431,7 @@ aside{
 /*FOOTER*/
 .footer-infos{
     display: flex;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -473,41 +470,53 @@ aside{
 
 
 /* PARTIE RESPONSIVE * / 
+/* Desktop */
+@media screen and (min-width: 1024px)
+{
+    /* Partie activités */
+    .activites-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .activites-container_bloc{
+        display: flex;
+        width: 50%;
+    }
+
+}
 
 /* Tablettes */
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1024px)
 {
     /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
     #blocpage
     {
         width: auto;
+        margin: 0;
     }
     
     header
     {
-        flex-direction: column;
+        margin: 0;
     }
 
-    .main-nav
-    {
-        display: flex;
-        border-bottom: solid 2.5px #f2f2f2;
-        width: 100%;
+    #logo{
+        margin-left: 20px;
     }
 
-    .navitem a:hover{
-        border-top: none;
-        padding-top: 38px;
-        color: #0065FC;
-        border-bottom: solid 2.5px #0065FC;
+    .navbar{
+        margin-right: 100px;
+    }
+    .navbar-menu_item{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .search-form_button_iphone{
-        visibility: visible;
-    }
-
-    .search-form_button{
-        visibility: hidden;
+    /* Formulaire de recherche */
+    .search{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
 
@@ -517,33 +526,159 @@ aside{
     #mainsection
     {
         flex-direction: column-reverse;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     aside 
     {
         margin-bottom: 50px;
+        width: 90%;
+    }
+
+    .aside-container_bloc{
+        width: 100%;
+        
+    }
+
+    article{
+        margin: 0;
+        width: 100%;
     }
 
     /* Partie activités */
-    .activites-container
-    {
-        flex-direction: column;
+    .activites-container-tall{
+        margin-bottom: 50px;
     }
+    .activites-container{
+        height: 1500px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
 
     /* Partie footer */
-    footer 
-    {
-        position: absolute;
-    }
-
 
 }
 
 
 /* iPhone8 */
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 768px)
 {
+        /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
+        #blocpage
+        {
+            width: auto;
+            margin: 0;
+        }
+        
+        /*Header et navbar*/
+        header
+        {
+            flex-direction: column;
+            margin: 0;
+        }
+    
+        #logo{
+            margin-left: 20px;
+        }
+    
+        .navbar{
+            margin-right: -50px;
+        }
+
+        .navbar-menu
+        {
+            display: flex;
+            border-bottom: solid 2.5px #f2f2f2;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    
+        .navbar-menu_item{
+            width: 50%;
+            text-align: center;
+
+        }
+    
+        .navbar-menu_item a:hover{
+            border-top: none;
+            padding-top: 38px;
+            color: #0065FC;
+            border-bottom: solid 2.5px #0065FC;
+            padding-bottom: 10px;
+        }
+
+        #inscription{
+            margin-right: 20px
+        }
+    
+        /* Formulaire de recherche */
+        .search{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .search-form_button{
+            visibility: hidden;
+            display: none;
+        }
+    
+        .search-form_button_iphone{
+            visibility: visible;
+            color: #fff;
+            background-color: #0065FC;
+            border: none;
+            border-radius: 15px;
+            height: 50px;
+            width: 50px;
+            margin-left: -10px;
+    
+        }
+    
+    
+        /* Partie filtres */
+    
+        /* Partie hébergements */
+        #mainsection
+        {
+            flex-direction: column-reverse;
+        }
+    
+        aside 
+        {
+            margin-bottom: 50px;
+        }
+
+        .aside-container_bloc{
+            width: 100%;
+            
+        }
+    
+        article{
+            margin: 0;
+        }
+    
+        /* Partie activités */
+        .activites-container
+        {
+            height: 2400px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+    
+    
+        /* Partie footer */
+        footer 
+        {
+           flex-direction: column;
+        }
+    
+    
+    }
+    
     /* Partie filtres */
     #titre-filtres
     {
@@ -555,5 +690,5 @@ aside{
     {
         flex-direction: column;
     }
-}
+
 
