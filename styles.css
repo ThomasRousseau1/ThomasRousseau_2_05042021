@@ -4,6 +4,20 @@ a{
     color: #000;
 }
 
+h2{
+    font-size: 1.7vmax;
+}
+
+h4{
+    margin: 3px 0px 0px 0px;
+    font-size: 1.3vw;
+}
+
+p {
+    font-size: 1vw;
+    margin: 2px 0 10px 0px;
+}
+
 /*HEADER*/
 header{
     display: flex;
@@ -26,7 +40,7 @@ header img{
 .navbar{
     display: flex;
     align-items: center;
-    margin-right: 80px;    
+    margin-right: 100px;    
 }
 
 .navbar-menu{
@@ -36,7 +50,9 @@ header img{
 
 .navbar-menu_item{
     display: inline-block;
-    margin-right: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 30px;
     list-style-type: none;
 }
 
@@ -69,6 +85,10 @@ body{
 }
 
 /*RECHERCHE*/
+.search-p{
+    font-size: 1em;
+}
+
 .search-form{
     display: flex;
 }
@@ -169,6 +189,10 @@ body{
     margin-right: 20px;
 }
 
+.info-p{
+    font-size: 1em;
+}
+
 /*HEBERGEMENTS*/
 #mainsection{
     display: flex;
@@ -177,66 +201,57 @@ body{
 /* ARTICLE */
 article{
     background-color: #F2F2F2;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 75%;
     margin-right: 50px;
 }
 
-.article-container-details{
-    margin-left: 20px;
-    margin-top: 5px;
-}
-
-
 #article-title{
-    margin-left: 50px;
-    margin-top: 50px;
+    margin: 3vw 0 3vw 2vw;
 }
 
 
 .article-container{
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
     border-radius: 15px;
     flex-wrap: wrap;
 }
 
 .article-container_bloc{
-    height: 250px;
-    width: 320px;
+    height: 13vw;
+    width: 17vw;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     -webkit-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     -moz-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     margin-bottom: 30px;
+    padding: 0.35em;
 }
 
 .article-container_bloc_infos{
-    height: 80px;
+    height: 10vw;
 }
 
 .article-container_bloc_infos img{
     object-fit: cover;
-    height: 150px;
-    width: 310px;
-    margin-left: 5px;
-    margin-top: 5px;
+    height: 70%;
+    width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.article-container_bloc_infos_title{
-    margin: 0px 0px -10px 0px;
+.article-container-details{
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-.article-container_bloc_infos_description{
-    margin-bottom: 10px;
-}
+
 
 .article-container_bloc_infos_stars{
     color: #0065FC;
-    font-size: 0.7em;
+    font-size: 0.7vw;
 }
 
 .greystar{
@@ -244,10 +259,9 @@ article{
 }
 
 #afficher-plus{
-    margin-left: 50px;
-    margin-bottom: 50px;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.3vw;
+    margin: 1vw 0 3vw 2vw;
 }
 
 /* ASIDE */
@@ -255,7 +269,7 @@ aside{
     background-color: #F2F2F2;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 10px;
+    border-radius: 25px;
     width: 25%;
 }
 
@@ -271,48 +285,36 @@ aside{
 .aside-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .aside-container_bloc{
-    width: 100%;
-    height: 160px;
+    height: 10vw;
+    padding: 0.35em;
     background: white;
     border-radius: 15px;
-    box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
-    -webkit-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
+    box-shadow: 0px 1px 24px 8px rgb(12 11 11 / 27%);
+    -webkit-box-shadow: 0px 1px 24px 8px rgb(12 11 11 / 27%);
     -moz-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
-     margin: 0px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
+    width: 22vw;
 }
 
 .aside-container img{
     object-fit: cover;
-    width: 125px;
-    height: 150px;
-    margin: 5px 0px -1px 5px;
+    width: 40%;
+    height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    float: left;
+    margin-right: 20px;
 }
 
-.aside-container-details{
-    display: flex;
-    flex-direction: column;
-    margin-top: -150px;
-    margin-left: 150px;
-}
-
-.aside-container-details_title{
-    font-size: 1.1em;
-    margin-bottom: -10px;
-}
-
-.aside-container-details_description{
-    font-size: 0.9em;
-    margin-bottom: 40px;
-}
 
 .aside-container-details_stars{
     color: #0065FC;
-    font-size: 0.7em;
+    font-size: 0.7vw;
+    margin-top: 3vw;
 }
 
 /* ACTIVITES */
@@ -325,21 +327,28 @@ aside{
 /* Grandes images */
 .activites-container{
     display: flex;
-    height: 630px;
+    height: 32vw;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.activites-container_bloc {
+    display: flex;
+    /* width: 50%; */
 }
 .activites-container-tall{
-    height: 590px;
-    width: 360px;
+    height: 100%;
+    width: 21vw;
+    object-fit: cover;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
-    margin-right: 50px;
 }
 
 .activites-container-tall img{
     object-fit: cover;
-    height: 520px;
-    width: 360px;
+    height: 89%;
+    width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -353,36 +362,34 @@ aside{
 
 /*Fort de Pomègues */
 .activites-container-small-pomegues{
-    width: 360px;
-    height: 300px;
+    width: 21vw;
+    height: 50%;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
-    margin-bottom: 40px;
 }
 
 .pomegues-img{
     object-fit: cover;
-    width: 360px;
-    height: 230px;
+    width: 100%;
+    height: 80%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 /* Iles du Frioul */
 .activites-container-small-frioul{
-    width: 360px;
-    height: 220px;
+    width: 21vw;
+    height: 40%;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
-    margin-bottom: 40px;
 }
 
 .frioul-img{
     object-fit: cover;
-    width: 360px;
-    height: 150px;
+    width: 100%;
+    height: 75%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -390,8 +397,8 @@ aside{
 
 /* Notre Dame de la Garde */
 .activites-container-small-notredame{
-    width: 360px;
-    height: 260px;
+    width: 21vw;
+    height: 50%;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
@@ -399,8 +406,8 @@ aside{
 
 .notredame-img{
     object-fit: cover;
-    width: 360px;
-    height: 190px;
+    width: 100%;
+    height: 75%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -408,58 +415,60 @@ aside{
 
 /* Parc Longchamp */
 .activites-container-small-longchamp{
-    width: 360px;
-    height: 260px;
+    width: 21vw;
+    height: 40%;
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
-    margin-bottom: 40px;
 }
 
 .longchamp-img{
     object-fit: cover;
-    width: 360px;
-    height: 190px;
+    width: 100%;
+    height: 75%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .activites-container-titles{
-    margin: 20px 0px 10px 20px;
+    margin-left: 1.2vw;
+    font-size: 1.2vmax;
+    margin-top: 0.6vw;
 }
 
 /*FOOTER*/
 .footer-infos{
     display: flex;
-    flex-wrap: wrap;
     background-color: #F2F2F2;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
 .footer-infos_section1{
-    margin-right: 300px;
-    margin-left: 30px;
+    margin-right: 13vw;
+    margin-left: 3vw;
 }
 
 .footer-infos_section2{
-    margin-right: 300px;
-    margin-left: 30px;
+    margin-right: 13vw;
+    margin-left: 3vw;
 }
 
 .footer-infos_section3{
-    margin-right: 300px;
-    margin-left: 30px;
+    margin-right: 13vw;
+    margin-left: 3vw;
 }
 .footer-infos_title{
     padding-left: 40px;
+    font-size: 1.2vw;
 }
 
 .footer-infos_list{
     list-style-type: none;
 }
 .footer-infos_list_element{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 1vw;
 }
 .footer-infos_list_element a:hover{
     font-weight: bold;
@@ -470,23 +479,8 @@ aside{
 
 
 /* PARTIE RESPONSIVE * / 
+
 /* Desktop */
-@media screen and (min-width: 1024px)
-{
-    /* Partie activités */
-    .activites-container
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .activites-container_bloc{
-        display: flex;
-        width: 50%;
-    }
-
-}
-
-/* Tablettes */
 @media screen and (max-width: 1024px)
 {
     /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
@@ -505,13 +499,6 @@ aside{
         margin-left: 20px;
     }
 
-    .navbar{
-        margin-right: 100px;
-    }
-    .navbar-menu_item{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
     /* Formulaire de recherche */
     .search{
@@ -525,46 +512,35 @@ aside{
     /* Partie hébergements */
     #mainsection
     {
-        flex-direction: column-reverse;
+        display: flex;
+        justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
-    }
-
-    aside 
-    {
-        margin-bottom: 50px;
-        width: 90%;
-    }
-
-    .aside-container_bloc{
-        width: 100%;
-        
     }
 
     article{
-        margin: 0;
+
         width: 100%;
     }
 
-    /* Partie activités */
-    .activites-container-tall{
-        margin-bottom: 50px;
+    .article-container_bloc{
+        width: 21vw;
+        height: 15vw;
     }
+
+    /* Partie activités */
     .activites-container{
-        height: 1500px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-
     /* Partie footer */
 
 }
 
 
-/* iPhone8 */
+/* Tablettes */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
 {
         /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
         #blocpage
@@ -572,6 +548,20 @@ aside{
             width: auto;
             margin: 0;
         }
+
+        /* GENERAL */ 
+        h2 {
+            font-size: 1.8vmax;
+        }
+
+        h4{
+            font-size: 1.7vw;
+        }
+
+        p{
+            font-size: 1.5vw;
+        }
+    
         
         /*Header et navbar*/
         header
@@ -600,7 +590,6 @@ aside{
         .navbar-menu_item{
             width: 50%;
             text-align: center;
-
         }
     
         .navbar-menu_item a:hover{
@@ -645,38 +634,54 @@ aside{
         {
             flex-direction: column-reverse;
         }
-    
+        
+        /* ASIDE */
         aside 
         {
+            width: auto;
             margin-bottom: 50px;
+            height: 30vw;
+            padding: 0;
+        }
+
+        .aside-title{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .aside-container {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .aside-container img{
+            margin-right: 5px;
         }
 
         .aside-container_bloc{
+            height: 15vw;
+            width: 27vw;
+        }
+
+        /* ARTICLE */
+
+        .article-container_bloc {
             width: 100%;
-            
+            width: 26vw;
+            height: 20vw;
+        }
+
+        .article-container_bloc_infos img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .article-container_bloc_infos_stars {
+            font-size: 1.2vw;
         }
     
-        article{
-            margin: 0;
-        }
-    
-        /* Partie activités */
-        .activites-container
-        {
-            height: 2400px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-    
-    
-    
-        /* Partie footer */
-        footer 
-        {
-           flex-direction: column;
-        }
-    
-    
+
     }
     
     /* Partie filtres */
@@ -685,10 +690,79 @@ aside{
         width: 100%;
     }
 
-    /* Footer colonne */
-    .infos
-    {
-        flex-direction: column;
-    }
+@media screen and (min-width: 500px) and (max-width: 700px){
+        /* Partie activités */
+        
+        .activites-container{
+
+            display: flex;
+            flex-wrap: wrap;
+            height: 150vw;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .activites-container-tall{
+
+            height: 40vw;
+            width: 100%;
+            align-items: center;
+
+        }
+
+        .activites-container-small{
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+
+        }
+
+        .activites-container-small-pomegues{
+            height: 25vw;
+            width: 50%;
+            margin-right: 3vw;
+        }
+        
+        .activites-container-small-frioul{
+            height: 25vw;
+            width: 50%;
+        }
+
+        .activites-container-small-notredame{
+            height: 25vw;
+            width: 50%;
+            margin-right: 3vw;
+        }
+
+        .activites-container-small-longchamp{
+            height: 25vw;
+            width: 50%;
+        }
+
+        #activites h2{
+            padding-left: 20px;
+        }
+
+        /* Partie footer */
+
+        .footer-infos_title{
+            font-size: 2vw;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 0;
+        }
+
+        footer a{
+            font-size: 1.7vw;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .footer-infos_list{
+            padding: 0;
+        }
+}
 
 
+
+    /* iPhone8 */
