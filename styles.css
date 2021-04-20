@@ -1,4 +1,10 @@
 /*GENERAL*/
+:root{
+    /* Pour le bleu */
+    --primary: #0065FC;
+    /* Pour les backgrounds gris */
+    --secondary: #F2F2F2;
+}
 a{
     text-decoration: none;
     color: #000;
@@ -53,13 +59,13 @@ header img{
 }
 
 .navbar-menu_item a:hover{
-    border-top: solid 2.5px #0065FC;
+    border-top: solid 2.5px var(--primary);
     padding-top: 37.5px;
-    color: #0065FC;
+    color: var(--primary);
 }
 
 #inscription{
-    color: #0065FC;
+    color: var(--primary);
     font-weight: bold;
     padding-top: 40px;
     font-size: 15px;
@@ -112,7 +118,7 @@ body{
 }
 
 .search-form_button{
-    background-color: #0065FC;
+    background-color: var(--primary);
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -131,11 +137,11 @@ body{
 
 /* PARTIE FILTRES */
 #filters-title{
-    float: left;
     margin-right: 30px;
     font-weight: bold;
     font-size: 1.3em;
 }
+
 .filters{
     display: flex;
     flex-wrap: wrap;
@@ -144,27 +150,30 @@ body{
     margin-bottom: 30px;
 }
 
-.filters-bloc {
+.filters-links{
     display: flex;
-    margin-right: 30px;
+    flex-wrap: wrap;
+}
+
+.filters-link{
+    display: flex;
+    margin-right: 1.5rem;
     border: 2px solid #d9d9d9;
     border-radius: 30px;
     font-weight: bold;
     align-items: center;
     padding-right: 20px;
-    padding-left: 0px;
-    margin-bottom: 10px;
 }
 
-.filters-bloc_icon{
-    color: #0065FC;
+.filters-link_icon{
+    color: var(--primary);
     background-color: #DEEBFF;
     padding: 16px;
     border-radius: 50%;
     margin: -3px 10px -3px -3px;
 }
 
-.filters-bloc:hover{
+.filters-link:hover{
     background-color: #f5f9ff;
     transform: scale(1.2);
 }
@@ -177,8 +186,9 @@ body{
 }
 
 .info-icon{
-    color: #0065FC;
-    padding: 8px 15px 8px 15px;
+    color: var(--primary);
+    font-size: 0.6em;
+    padding: 7px 10px 7px 10px;
     background-color: #fff;
     border-radius: 50%;
     border: 1px solid #d9d9d9;
@@ -187,6 +197,7 @@ body{
 
 .info-p{
     font-size: 1em;
+    margin: 0;
 }
 
 /*HEBERGEMENTS*/
@@ -196,13 +207,13 @@ body{
 
 /* ARTICLE */
 article{
-    background-color: #F2F2F2;
+    background-color: var(--secondary);
     border-radius: 25px;
     width: 75%;
     margin-right: 50px;
 }
 
-#article-title{
+.article-title{
     margin: 3vw 0 3vw 2vw;
 }
 
@@ -246,15 +257,15 @@ article{
 
 
 .article-container_bloc_infos_stars{
-    color: #0065FC;
+    color: var(--primary);
     font-size: 0.7vw;
 }
 
 .greystar{
-    color: #F2F2F2;
+    color: var(--secondary);
 }
 
-#afficher-plus{
+.afficher-plus{
     font-weight: bold;
     font-size: 1.3vw;
     margin: 1vw 0 3vw 2vw;
@@ -262,7 +273,7 @@ article{
 
 /* ASIDE */
 aside{
-    background-color: #F2F2F2;
+    background-color: var(--secondary);
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 25px;
@@ -286,7 +297,7 @@ aside{
 .aside-container_bloc{
     height: 10vw;
     padding: 0.35em;
-    background: white;
+    background: #fff;
     border-radius: 15px;
     box-shadow: 0px 1px 24px 8px rgb(12 11 11 / 27%);
     -webkit-box-shadow: 0px 1px 24px 8px rgb(12 11 11 / 27%);
@@ -307,13 +318,13 @@ aside{
 
 
 .aside-container-details_stars{
-    color: #0065FC;
+    color: var(--primary);
     font-size: 0.7vw;
     margin-top: 3vw;
 }
 
 /* ACTIVITES */
-#activites{
+.activites{
     margin-top: 60px;
     margin-bottom: 30px;
     width: 100%;
@@ -407,7 +418,6 @@ aside{
     border-top-right-radius: 15px;
 }
 
-
 /* Parc Longchamp */
 .activites-container-small-longchamp{
     width: 21vw;
@@ -434,25 +444,16 @@ aside{
 /*FOOTER*/
 .footer-infos{
     display: flex;
-    background-color: #F2F2F2;
+    background-color: var(--secondary);
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-.footer-infos_section1{
+.footer-infos_section{
     margin-right: 13vw;
     margin-left: 3vw;
 }
 
-.footer-infos_section2{
-    margin-right: 13vw;
-    margin-left: 3vw;
-}
-
-.footer-infos_section3{
-    margin-right: 13vw;
-    margin-left: 3vw;
-}
 .footer-infos_title{
     padding-left: 40px;
     font-size: 1.2vw;
@@ -468,9 +469,6 @@ aside{
 .footer-infos_list_element a:hover{
     font-weight: bold;
 }
-
-
-
 
 
 /* PARTIE RESPONSIVE * / 
@@ -496,9 +494,6 @@ aside{
         margin-right: 20px;
     }
 
-
-    /* Partie filtres */
-
     /* Partie hébergements */
     #mainsection
     {
@@ -518,7 +513,7 @@ aside{
         height: 15vw;
     }
     
-    #article-title{
+    .article-title{
         margin-left: 30px;
     }
     /* Partie activités */
@@ -530,7 +525,6 @@ aside{
     #activites h2{
         margin-left: 20px;
     }
-    /* Partie footer */
 
 }
 
@@ -558,11 +552,18 @@ aside{
         p{
             font-size: 1.5vw;
         }
-    
-        
 
-        /* Partie filtres */
-    
+    /* Partie filtres */
+    #titre-filtres
+    {
+        width: 100%;
+    }
+
+    .filters-link{
+        margin-bottom: 10px;
+        margin-right: 0.5rem
+    }
+
         /* Partie hébergements */
         #mainsection
         {
@@ -615,16 +616,9 @@ aside{
         .article-container_bloc_infos_stars {
             font-size: 1.2vw;
         }
-    
 
     }
     
-    /* Partie filtres */
-    #titre-filtres
-    {
-        width: 100%;
-    }
-
 @media screen and (min-width: 500px) and (max-width: 700px){
         /* Partie activités */
         
@@ -891,12 +885,12 @@ aside{
         font-size: 2.2vw;
     }
 
-    #article-title{
+    .article-title{
         font-size: 5vw;
         margin-left: 20px;
     }
 
-    #afficher-plus{
+    .afficher-plus{
         font-size: 4vw;
         margin-left: 30px;
     }

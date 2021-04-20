@@ -14,27 +14,22 @@
 <!--Entête-->
 <header>
     <img src="ressources/images/logo/Reservia.svg" alt="logo" class="logo">
-    <div class="navbar">
-    <nav>
+    <nav class="navbar">
         <ul class="navbar-menu">
             <li class="navbar-menu_item"><a href="#mainsection">Hébergements</a></li>
             <li class="navbar-menu_item"><a href="#activites">Activités</a></li>
         </ul>
+        <div class="inscription-box">
+            <a id="inscription" href="#">S'inscrire</a> 
+        </div>
     </nav>
-    <div class="inscription-box">
-        <a id="inscription" href="#">S'inscrire</a> 
-    </div>
-</div>
 </header>
 
 <!--Partie recherche hébergement-->
 <div id="blocpage">
 <section class="search">
-    <div>
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p class="search-p">En plein centre ville ou en pleine nature</p>
-    </div>
-    <div>
         <form class="search-form">
             <button class="search-form_icon"><i class="fas fa-map-marker-alt"></i></button>
             <input class="search-form_input" type="search" placeholder="Marseille, France"/>
@@ -44,44 +39,45 @@
         
 <!--Partie filtres-->
     <div class="filters">
-        <h3 id="filters-title">Filtres </h3>
+        <h3 id="filters-title">Filtres</h3>
+            <div class="filters-links">
             <a href="#">
-                <div class="filters-bloc">
-                    <span class="filters-bloc_icon"><i class="fas fa-money-bill-wave"></i></span>
-                    <span class="filters-bloc_description">Économique</span>
+                <div class="filters-link">
+                    <span class="filters-link_icon"><i class="fas fa-money-bill-wave"></i></span>
+                    <span class="filters-link_description">Économique</span>
                 </div>
             </a>
             <a href="#">
-                <div class="filters-bloc">
-                    <span class="filters-bloc_icon"><i class="fas fa-child"></i></span>
-                    <span class="filters-bloc_description">Familial</span>
+                <div class="filters-link">
+                    <span class="filters-link_icon"><i class="fas fa-child"></i></span>
+                    <span class="filters-link_description">Familial</span>
                 </div>
             </a>
             <a href="#">
-                <div class="filters-bloc">
-                    <span class="filters-bloc_icon"><i class="fas fa-heart"></i></span>
-                    <span class="filters-bloc_description">Romantique</span>
+                <div class="filters-link">
+                    <span class="filters-link_icon"><i class="fas fa-heart"></i></span>
+                    <span class="filters-link_description">Romantique</span>
                 </div>
             </a>
             <a href="#">
-                <div class="filters-bloc">
-                    <span class="filters-bloc_icon"><i class="fas fa-dog"></i></span>
-                    <span class="filters-bloc_description">Animaux autorisés</span>
+                <div class="filters-link">
+                    <span class="filters-link_icon"><i class="fas fa-dog"></i></span>
+                    <span class="filters-link_description">Animaux autorisés</span>
                 </div>
             </a>
+        </div>
     </div>
 
         <div class="info">
             <span class="info-icon"><i class="fas fa-info"></i></span>
             <p class="info-p">Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
     </div>
 </section>
 
 <!--Partie résultats de recherches hébergement-->
 <main id="mainsection">
     <article>
-        <h2 id="article-title">Hébergements à Marseille</h2>
+        <h2 class="article-title">Hébergements à Marseille</h2>
             <div class="article-container">   
             <a href="#" class="article-container_bloc">
             <div class="article-container_bloc_infos">
@@ -180,7 +176,7 @@
             </div>
             </a>
         </div>
-            <a href="#"><p id="afficher-plus">Afficher plus</p></a>
+            <a href="#"><p class="afficher-plus">Afficher plus</p></a>
 </article>
     <!--Element à droite-->
     <aside>
@@ -288,7 +284,7 @@
                 <h4 class="activites-container-titles">Parc Longchamp</h4>
                 </a>
             </div>
-    </div>
+        </div>
     </div>
 </section>
 </div>
@@ -296,7 +292,7 @@
 <!--Bas de page-->
 <footer>
     <section class="footer-infos">
-        <div class="footer-infos_section1">
+        <div class="footer-infos_section">
             <h3 class="footer-infos_title">A propos</h3>
             <ul class="footer-infos_list">
                 <li class="footer-infos_list_element"><a href="#">Fonctionnement du site</a></li>
@@ -304,14 +300,14 @@
                 <li class="footer-infos_list_element"><a href="#">Données et confidentialité</a></li>
             </ul>
         </div>
-        <div class="footer-infos_section2">
+        <div class="footer-infos_section">
             <h3 class="footer-infos_title">Nos hébergements</h3>
             <ul class="footer-infos_list">
                 <li class="footer-infos_list_element"><a href="#">Charte qualité</a></li>
                 <li class="footer-infos_list_element"><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
-        <div class="footer-infos_section3">
+        <div class="footer-infos_section">
             <h3 class="footer-infos_title">Assistance</h3>
             <ul class="footer-infos_list">
                 <li class="footer-infos_list_element"><a href="#">Centre d'aide</a></li>
