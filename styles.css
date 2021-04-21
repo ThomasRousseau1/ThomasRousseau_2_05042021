@@ -1,9 +1,16 @@
 /*GENERAL*/
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
 :root{
     /* Pour le bleu */
     --primary: #0065FC;
     /* Pour les backgrounds gris */
     --secondary: #F2F2F2;
+    /* Pour les contours */
+    --tertiary: #d9d9d9; 
 }
 a{
     text-decoration: none;
@@ -64,7 +71,7 @@ header img{
     color: var(--primary);
 }
 
-#inscription{
+.inscription{
     color: var(--primary);
     font-weight: bold;
     padding-top: 40px;
@@ -108,13 +115,17 @@ body{
 }
 
 .search-form_input{
-    border: 1px solid #d9d9d9;
+    border: 1px solid var(--tertiary);
     font-size: 1em;
     height: 50px;
     font-weight: bold;
     padding-left: 20px;
     border-left: none;
     border-right: none;
+}
+
+.search-form_input::placeholder{
+    color: #000;
 }
 
 .search-form_button{
@@ -129,6 +140,7 @@ body{
     width: 120px;
     height: 50px;
     padding: 0;
+    cursor: pointer;
 }
 
 .search-form_button_iphone{
@@ -136,7 +148,7 @@ body{
 }
 
 /* PARTIE FILTRES */
-#filters-title{
+.filters-title{
     margin-right: 30px;
     font-weight: bold;
     font-size: 1.3em;
@@ -158,7 +170,7 @@ body{
 .filters-link{
     display: flex;
     margin-right: 1.5rem;
-    border: 2px solid #d9d9d9;
+    border: 2px solid var(--tertiary);
     border-radius: 30px;
     font-weight: bold;
     align-items: center;
@@ -175,7 +187,7 @@ body{
 
 .filters-link:hover{
     background-color: #f5f9ff;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Ligne infos */
@@ -191,7 +203,7 @@ body{
     padding: 7px 10px 7px 10px;
     background-color: #fff;
     border-radius: 50%;
-    border: 1px solid #d9d9d9;
+    border: 1px solid var(--tertiary);
     margin-right: 20px;
 }
 
@@ -235,6 +247,10 @@ article{
     -moz-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
     margin-bottom: 30px;
     padding: 0.35em;
+}
+
+.article-container_bloc:hover{
+    transform: scale(1.05);
 }
 
 .article-container_bloc_infos{
@@ -306,6 +322,10 @@ aside{
     width: 22vw;
 }
 
+.aside-container_bloc:hover{
+    transform: scale(1.05);
+}
+
 .aside-container img{
     object-fit: cover;
     width: 40%;
@@ -340,8 +360,8 @@ aside{
 
 .activites-container_bloc {
     display: flex;
-    /* width: 50%; */
 }
+
 .activites-container-tall{
     height: 100%;
     width: 21vw;
@@ -349,6 +369,10 @@ aside{
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
+}
+
+.activites-container-tall:hover{
+    transform: scale(1.05);
 }
 
 .activites-container-tall img{
@@ -375,6 +399,10 @@ aside{
     border-radius: 15px;
 }
 
+.activites-container-small-pomegues:hover{
+    transform: scale(1.05);
+}
+
 .pomegues-img{
     object-fit: cover;
     width: 100%;
@@ -390,6 +418,10 @@ aside{
     -webkit-box-shadow: 2px 2px 20px rgb(230 230 230);
     box-shadow: 2px 2px 20px rgb(230 230 230);
     border-radius: 15px;
+}
+
+.activites-container-small-frioul:hover{
+    transform: scale(1.05);
 }
 
 .frioul-img{
@@ -410,6 +442,10 @@ aside{
     border-radius: 15px;
 }
 
+.activites-container-small-notredame:hover{
+    transform: scale(1.05);
+}
+
 .notredame-img{
     object-fit: cover;
     width: 100%;
@@ -427,6 +463,10 @@ aside{
     border-radius: 15px;
 }
 
+.activites-container-small-longchamp:hover{
+    transform: scale(1.05);
+}
+
 .longchamp-img{
     object-fit: cover;
     width: 100%;
@@ -439,6 +479,10 @@ aside{
     margin-left: 1.2vw;
     font-size: 1.1vmax;
     margin-top: 0.7vw;
+}
+
+#activites h2{
+    margin-top: 60px;
 }
 
 /*FOOTER*/
@@ -636,7 +680,11 @@ aside{
             height: 40vw;
             width: 100%;
             align-items: center;
+        }
 
+        /* Pour que les container-tall prennent toute la largeur de la page */
+        .activites-container-tall-mozilla{
+            width: 100%;
         }
 
         .activites-container-tall img{
@@ -760,8 +808,8 @@ aside{
 
         .navbar-menu_item:hover{
             border-top: none;
-            color: #0065FC;
-            border-bottom: solid 2.5px #0065FC;
+            color: var(--primary);
+            border-bottom: solid 2.5px var(--primary);
             margin-bottom: -13px;
 
         }
@@ -771,7 +819,7 @@ aside{
             bottom: 110px;
         }
 
-        #inscription{
+        .inscription{
             margin-right: 20px;
             margin-top: -15px;
         }
@@ -804,7 +852,7 @@ aside{
             height: 50px;
             width: 50px;
             margin-left: -10px;
-    
+            cursor: pointer;
         }
 }  
 
@@ -858,6 +906,7 @@ aside{
     /* Article */ 
     article{
         background-color: #fff;
+        margin: 0;
     }
 
     .article-container{
@@ -898,7 +947,7 @@ aside{
     /* PARTIE ACTIVITES */
 
     #activites{
-        height: 340vw;
+        height: 350vw;
     }
 
     .activites-container{
@@ -984,9 +1033,5 @@ aside{
     .footer-infos_list_element{
         font-size: 5vw;
     }
-
-
-
-
 
 }
