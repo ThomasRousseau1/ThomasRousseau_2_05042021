@@ -466,7 +466,7 @@ aside{
 .activites-container-small-longchamp:hover{
     transform: scale(1.05);
 }
-
+ 
 .longchamp-img{
     object-fit: cover;
     width: 100%;
