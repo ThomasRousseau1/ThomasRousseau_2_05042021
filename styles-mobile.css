@@ -1,0 +1,461 @@
+@media screen and (max-width: 800px)
+{
+        /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
+        #blocpage
+        {
+            width: auto;
+            margin: 0 20px 0 20px;
+        }
+
+        /* GENERAL */ 
+        h2 {
+            font-size: 1.8vmax;
+        }
+
+        h4{
+            font-size: 1.7vw;
+        }
+
+        p{
+            font-size: 1.5vw;
+        }
+
+    /* Partie filtres */
+    #titre-filtres
+    {
+        width: 100%;
+    }
+
+    .filters-link{
+        margin-bottom: 10px;
+        margin-right: 0.5rem
+    }
+
+        /* Partie hébergements */
+        #mainsection
+        {
+            flex-direction: column-reverse;
+        }
+        
+        /* ASIDE */
+        aside 
+        {
+            width: auto;
+            margin-bottom: 50px;
+            padding: 0;
+        }
+
+        .aside-title{
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .aside-container {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .aside-container img{
+            margin-right: 5px;
+        }
+
+        .aside-container_bloc{
+            height: 15vw;
+            width: 27vw;
+        }
+
+        /* ARTICLE */
+        article {
+            width: 100%;
+        }
+
+        .article-container_bloc {
+            width: 100%;
+            width: 26vw;
+            height: 20vw;
+        }
+
+        .article-container_bloc_infos img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .article-container_bloc_infos_stars {
+            font-size: 1.2vw;
+        }
+
+    }
+    
+@media screen and (min-width: 500px) and (max-width: 700px){
+        /* Partie activités */
+        
+        .activites-container{
+
+            display: flex;
+            flex-wrap: wrap;
+            height: 150vw;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .activites-container-tall{
+
+            height: 40vw;
+            width: 100%;
+            align-items: center;
+        }
+
+        /* Pour que les container-tall prennent toute la largeur de la page sur Mozilla */
+        .activites-container-tall-mozilla{
+            width: 100%;
+        }
+
+        .activites-container-tall img{
+            height: 33vw;
+        }
+
+        .activites-container-small{
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+
+        }
+
+        .activites-container-small-pomegues{
+            height: 25vw;
+            width: 50%;
+            margin-right: 3vw;
+        }
+
+        .pomegues-img{
+            height: 18vw;
+        }
+        
+        .activites-container-small-frioul{
+            height: 25vw;
+            width: 50%;
+        }
+
+        .activites-container-small-notredame{
+            height: 25vw;
+            width: 50%;
+            margin-right: 3vw;
+        }
+
+        .notredame-img{
+            height: 18vw;
+        }
+
+        .activites-container-small-longchamp{
+            height: 25vw;
+            width: 50%;
+        }
+
+        .longchamp-img{
+            height: 18vw;
+        }
+
+        #activites h2{
+            padding-left: 20px;
+            font-size: 3vw;
+        }
+
+        .activites-container-titles{
+            font-size: 2.2vw;
+            text-align: center;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        /* Partie footer */
+
+        .footer-infos_title{
+            font-size: 2vw;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 0;
+        }
+
+        footer a{
+            font-size: 1.7vw;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .footer-infos_list{
+            padding: 0;
+        }
+}
+
+
+@media screen and (max-width: 700px){
+
+    /*Header et navbar*/
+    header
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .logo{
+        margin-left: 20px;
+        align-self: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .navbar{
+        display: inline;
+    }
+
+    .navbar-menu
+    {
+        display: flex;
+        border-bottom: solid 2.5px #f2f2f2;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-menu_item{
+        width: 50%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .navbar-menu_item:hover{
+        border-top: none;
+        color: var(--primary);
+        border-bottom: solid 2.5px var(--primary);
+        margin-bottom: -13px;
+        padding-top: 0;
+    }
+
+    .inscription-box{
+        position: relative;
+        bottom: 110px;
+    }
+
+    .inscription{
+        margin-right: 20px;
+        margin-top: -15px;
+    }
+
+    /* Formulaire de recherche */
+    h1{
+        margin: 20px 0 10px 0;
+    }
+
+    .search-p{
+        margin-bottom: 30px;
+    }
+
+    .search{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 30px;
+    }
+    .search-form_button{
+        visibility: hidden;
+        display: none;
+    }
+
+    .search-form_button_iphone{
+        visibility: visible;
+        color: #fff;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 15px;
+        height: 50px;
+        width: 50px;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+}  
+
+@media screen and (max-width: 500px){
+
+    #blocpage {
+        margin: 0;
+    }
+
+    #mainsection{
+        padding: 0;
+    }
+
+    /* Partie filtres */
+    
+    /* Aside */
+    aside{
+        border-radius: 0;
+    }
+
+    .aside-container{
+        flex-direction: column;
+    }
+
+    .aside-container_bloc{
+        width: 90%;
+        height: 32vw;
+    }
+    .aside-container img{
+        margin-right: 15px;
+    }
+
+    aside h2{
+        font-size: 5vw;
+    }
+
+    .aside-title{
+        margin: 25px 15px 0 20px;
+    }
+
+    h4{
+        font-size: 4vw;
+    }
+
+    aside p{
+        font-size: 3.5vw;
+    }
+
+    .aside-container-details_stars{
+        font-size: 2.2vw;
+        margin-top: 12vw;
+    }
+
+    /* Article */ 
+    article{
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .article-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-container_bloc{
+        width: 90%;
+        height: 47vw;
+        box-shadow: 0px 1px 24px 8px rgb(12 11 11 / 27%);
+        -webkit-box-shadow: 0px 1px 24px 8px rgb(12 11 11 / 27%);
+        -moz-box-shadow: 0px 1px 24px 8px rgba(12,11,11,0.27);
+    }
+
+    .article-container_bloc_infos img{
+        height: 28vw;
+    }
+
+    article p{
+        font-size: 3.5vw;
+    }
+    
+    .article-container_bloc_infos_stars{
+        font-size: 2.2vw;
+    }
+
+    .article-title{
+        font-size: 5vw;
+        margin-left: 20px;
+    }
+
+    .afficher-plus{
+        font-size: 4vw;
+        margin-left: 30px;
+    }
+
+    /* PARTIE ACTIVITES */
+
+    #activites{
+        height: 350vw;
+    }
+
+    .activites-container{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .activites-container-tall{
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 20px;
+    }
+
+    .activites-container-tall img{
+        height: 75%;
+    }
+
+    .activites-container-small-pomegues{
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 20px;
+    }
+
+    .pomegues-img{
+        height:75%;
+    }
+
+    .activites-container-small-frioul{
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 20px;
+    }
+
+    .frioul-img{
+        height:75%;
+    }
+
+    .activites-container-small-notredame{
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 20px;
+    }
+
+    .notredame-img{
+        height:75%;
+    }
+
+    .activites-container-small-longchamp{
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 20px;
+    }
+
+    .longchamp-img{
+        height:75%;
+    }
+
+    .activites-container-titles{
+        font-size: 4vw;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    #activites h2{
+        margin-left: 20px;
+        font-size: 5vw;
+    }
+
+    /* FOOTER */
+    .footer-infos{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .footer-infos_title{
+        font-size: 5.5vw;
+        padding: 0;
+    }
+
+    .footer-infos_list{
+        padding: 0;
+    }
+
+    .footer-infos_list_element{
+        font-size: 5vw;
+    }
+
+}

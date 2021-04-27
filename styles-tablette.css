@@ -1,0 +1,54 @@
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
+    #blocpage
+    {
+        width: auto;
+        margin: 0;
+    }
+    
+    #logo{
+        margin-left: 20px;
+    }
+
+
+    /* Formulaire de recherche */
+    .search{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Partie hébergements */
+    #mainsection
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    article{
+
+        width: 100%;
+    }
+
+    .article-container_bloc{
+        width: 21vw;
+        height: 15vw;
+    }
+    
+    .article-title{
+        margin-left: 30px;
+    }
+    /* Partie activités */
+    .activites-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #activites h2{
+        margin-left: 20px;
+    }
+
+}
+
