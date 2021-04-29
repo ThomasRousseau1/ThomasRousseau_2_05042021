@@ -21,7 +21,7 @@ h2{
     font-size: 1.7vmax;
 }
 
-h4{
+h3{
     margin: 3px 0px 0px 0px;
     font-size: 1.3vw;
 }
@@ -83,7 +83,7 @@ header img{
 
 
 /*CORPS*/
-#blocpage{
+main{
     margin: 0 50px 0 50px;
 }
 body{
@@ -93,6 +93,10 @@ body{
 }
 
 /*RECHERCHE*/
+.search{
+    margin-left: 50px;
+}
+
 .search-p{
     font-size: 1em;
 }
@@ -213,7 +217,7 @@ body{
 }
 
 /*HEBERGEMENTS*/
-#mainsection{
+main{
     display: flex;
 }
 
@@ -225,7 +229,7 @@ article{
     margin-right: 50px;
 }
 
-.article-title{
+#article-title{
     margin: 3vw 0 3vw 2vw;
 }
 
@@ -344,11 +348,6 @@ aside{
 }
 
 /* ACTIVITES */
-.activites{
-    margin-top: 60px;
-    margin-bottom: 30px;
-    width: 100%;
-}
 
 /* Grandes images */
 .activites-container{

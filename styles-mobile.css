@@ -1,7 +1,7 @@
 @media screen and (max-width: 800px)
 {
         /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
-        #blocpage
+        main
         {
             width: auto;
             margin: 0 20px 0 20px;
@@ -12,7 +12,7 @@
             font-size: 1.8vmax;
         }
 
-        h4{
+        h3{
             font-size: 1.7vw;
         }
 
@@ -32,7 +32,7 @@
     }
 
         /* Partie hébergements */
-        #mainsection
+        main
         {
             flex-direction: column-reverse;
         }
@@ -85,6 +85,10 @@
 
         .article-container_bloc_infos_stars {
             font-size: 1.2vw;
+        }
+
+        #activites { 
+            padding: 0 20px 0 20px;
         }
 
     }
@@ -233,12 +237,10 @@
         padding-top: 0;
     }
 
-    .inscription-box{
+    .inscription{
+        float: right;
         position: relative;
         bottom: 110px;
-    }
-
-    .inscription{
         margin-right: 20px;
         margin-top: -15px;
     }
@@ -277,11 +279,11 @@
 
 @media screen and (max-width: 500px){
 
-    #blocpage {
+    main {
         margin: 0;
     }
 
-    #mainsection{
+    main{
         padding: 0;
     }
 
@@ -312,7 +314,7 @@
         margin: 25px 15px 0 20px;
     }
 
-    h4{
+    h3{
         font-size: 4vw;
     }
 
@@ -356,7 +358,7 @@
         font-size: 2.2vw;
     }
 
-    .article-title{
+    #article-title{
         font-size: 5vw;
         margin-left: 20px;
     }
@@ -370,6 +372,7 @@
 
     #activites{
         height: 350vw;
+        padding: 0;
     }
 
     .activites-container{

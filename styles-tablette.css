@@ -1,7 +1,14 @@
+@media screen and (min-width: 1024px) 
+{ 
+    #activites { 
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
 @media screen and (min-width: 800px) and (max-width: 1024px)
 {
     /* Modification header avec logo à côté de s'inscrire et hébergements et activités en dessous */
-    #blocpage
+    main
     {
         width: auto;
         margin: 0;
@@ -19,7 +26,7 @@
     }
 
     /* Partie hébergements */
-    #mainsection
+    main
     {
         display: flex;
         justify-content: space-between;
@@ -37,7 +44,7 @@
         height: 15vw;
     }
     
-    .article-title{
+    #article-title{
         margin-left: 30px;
     }
     /* Partie activités */
