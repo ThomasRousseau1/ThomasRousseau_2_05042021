@@ -212,6 +212,7 @@
 
     .navbar{
         display: inline;
+        height: 50px;
     }
 
     .navbar-menu
@@ -240,9 +241,8 @@
     .inscription{
         float: right;
         position: relative;
-        bottom: 110px;
+        bottom: 120px;
         margin-right: 20px;
-        margin-top: -15px;
     }
 
     /* Formulaire de recherche */
@@ -260,7 +260,6 @@
         padding-top: 30px;
     }
     .search-form_button{
-        visibility: hidden;
         display: none;
     }
 
