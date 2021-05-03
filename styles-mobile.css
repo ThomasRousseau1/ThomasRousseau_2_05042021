@@ -125,7 +125,7 @@
 
         .activites-container-small{
             flex-direction: row;
-
+            width: 100%;
         }
 
         .activites-container-small-pomegues{
