@@ -237,9 +237,9 @@
     }
 
     .inscription{
-        float: right;
-        position: relative;
-        bottom: 120px;
+        position: absolute;
+        top: 0;
+        right: 0;
         margin-right: 20px;
     }
 
@@ -258,6 +258,7 @@
         padding-top: 30px;
     }
     .search-form_button{
+        visibility: hidden;
         display: none;
     }
 
@@ -271,6 +272,7 @@
         width: 50px;
         margin-left: -10px;
         cursor: pointer;
+        display: inline;
     }
 }  
 
@@ -327,10 +329,6 @@
     article{
         background-color: #fff;
         margin: 0;
-    }
-
-    .article-container{
-        align-items: center;
     }
 
     .article-container_bloc{
