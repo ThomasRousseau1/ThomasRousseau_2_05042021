@@ -285,8 +285,6 @@
 
     h2 {
         font-size: 6vw;
-        margin-left: 20px;
-
     }
 
     /* Partie filtres */
@@ -361,6 +359,10 @@
     #activites{
         height: 350vw;
         padding: 0;
+    }
+
+    #activites h2 { 
+        margin-left: 20px;
     }
 
     .activites-container{
